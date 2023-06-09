@@ -1,6 +1,6 @@
 # ngx-sortablejs
 
-This package is an Angular 2+ binding for [Sortable.js](https://github.com/RubaXa/Sortable). Supports standard arrays and Angular `FormArray`.
+This package is an Angular v16 binding for [Sortable.js](https://github.com/RubaXa/Sortable). Supports standard arrays and Angular `FormArray`.
 
 Previously known as angular-sortablejs.
 
