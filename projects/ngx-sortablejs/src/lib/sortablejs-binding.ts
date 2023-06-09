@@ -1,9 +1,7 @@
-import {SortableData} from './sortablejs.directive';
+import { SortableData } from "./sortablejs.directive";
 
 export class SortablejsBinding {
-
-  constructor(private target: SortableData) {
-  }
+  constructor(private target: SortableData) {}
 
   insert(index: number, item: any) {
     if (this.isFormArray) {
@@ -36,5 +34,4 @@ export class SortablejsBinding {
     // just checking for random FormArray methods not available on a standard array
     return !!this.target.at && !!this.target.insert && !!this.target.reset;
   }
-
 }

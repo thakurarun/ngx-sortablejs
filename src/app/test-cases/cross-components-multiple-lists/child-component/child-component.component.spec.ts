@@ -1,19 +1,16 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { SortablejsModule } from 'ngx-sortablejs';
-import { ChildComponentComponent } from './child-component.component';
+import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
+import { SortablejsModule } from "ngx-sortablejs";
+import { ChildComponentComponent } from "./child-component.component";
 
-describe('ChildComponentComponent', () => {
+describe("ChildComponentComponent", () => {
   let component: ChildComponentComponent;
   let fixture: ComponentFixture<ChildComponentComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ChildComponentComponent],
-      imports: [
-        SortablejsModule,
-      ],
-    })
-      .compileComponents();
+      imports: [SortablejsModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -22,7 +19,7 @@ describe('ChildComponentComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

@@ -1,19 +1,16 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { SortablejsModule } from 'ngx-sortablejs';
-import { MultipleListsComponent } from './multiple-lists.component';
+import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
+import { SortablejsModule } from "ngx-sortablejs";
+import { MultipleListsComponent } from "./multiple-lists.component";
 
-describe('MultipleListsComponent', () => {
+describe("MultipleListsComponent", () => {
   let component: MultipleListsComponent;
   let fixture: ComponentFixture<MultipleListsComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [MultipleListsComponent],
-      imports: [
-        SortablejsModule,
-      ],
-    })
-      .compileComponents();
+      imports: [SortablejsModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -22,7 +19,7 @@ describe('MultipleListsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

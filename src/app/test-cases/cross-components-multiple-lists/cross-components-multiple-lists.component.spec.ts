@@ -1,9 +1,9 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { SortablejsModule } from 'ngx-sortablejs';
-import { ChildComponentComponent } from './child-component/child-component.component';
-import { CrossComponentsMultipleListsComponent } from './cross-components-multiple-lists.component';
+import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
+import { SortablejsModule } from "ngx-sortablejs";
+import { ChildComponentComponent } from "./child-component/child-component.component";
+import { CrossComponentsMultipleListsComponent } from "./cross-components-multiple-lists.component";
 
-describe('CrossComponentsMultipleListsComponent', () => {
+describe("CrossComponentsMultipleListsComponent", () => {
   let component: CrossComponentsMultipleListsComponent;
   let fixture: ComponentFixture<CrossComponentsMultipleListsComponent>;
 
@@ -13,11 +13,8 @@ describe('CrossComponentsMultipleListsComponent', () => {
         CrossComponentsMultipleListsComponent,
         ChildComponentComponent,
       ],
-      imports: [
-        SortablejsModule,
-      ],
-    })
-      .compileComponents();
+      imports: [SortablejsModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -26,7 +23,7 @@ describe('CrossComponentsMultipleListsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

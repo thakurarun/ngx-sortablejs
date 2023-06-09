@@ -1,12 +1,12 @@
-import {Component} from '@angular/core';
-import { TestBed, waitForAsync } from '@angular/core/testing';
-import {SortablejsModule} from './sortablejs.module';
+import { Component } from "@angular/core";
+import { TestBed, waitForAsync } from "@angular/core/testing";
+import { SortablejsModule } from "./sortablejs.module";
 
-describe('SortablejsDirective', () => {
+describe("SortablejsDirective", () => {
   @Component({
     template: `
       <div [sortablejs]="items">
-        <div *ngFor="let item of items">{{item}}</div>
+        <div *ngFor="let item of items">{{ item }}</div>
       </div>
     `,
   })
@@ -16,16 +16,12 @@ describe('SortablejsDirective', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        TestComponent1,
-      ],
-      imports: [
-        SortablejsModule,
-      ],
+      declarations: [TestComponent1],
+      imports: [SortablejsModule],
     }).compileComponents();
   }));
 
-  it('should create', () => {
+  it("should create", () => {
     const fixture = TestBed.createComponent(TestComponent1);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
